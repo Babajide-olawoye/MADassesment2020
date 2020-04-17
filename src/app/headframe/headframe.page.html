@@ -1,4 +1,4 @@
-<ion-header >
+<ion-header>
   <ion-toolbar>
     <ion-title id = "heading">
       Anime FanPage
@@ -15,19 +15,3 @@
 
   </ion-toolbar>
 </ion-header>
-
-<ion-content id="container">
-<div >
-  
-  
-    <div *ngFor= "let a of fave">
-     <h4 align ="center"> {{a.name}} </h4>
-      <ion-item>
-      <img [src]="a.imgage" height="200" width="300"/>
-      <p align="right"> {{a.discript}}</p>
-      </ion-item>
-    </div>
-  
-
-</div>
-</ion-content>

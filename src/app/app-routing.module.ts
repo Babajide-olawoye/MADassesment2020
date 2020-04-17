@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'fav-page',
     loadChildren: () => import('./fav-page/fav-page.module').then( m => m.FavPagePageModule)
   },
+  {
+    path: 'headframe',
+    loadChildren: () => import('./headframe/headframe.module').then( m => m.HeadframePageModule)
+  },
 ];
 
 @NgModule({
