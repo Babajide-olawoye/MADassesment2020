@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AnimeShowService} from '../anime-show.service'
 
 @Component({
   selector: 'app-type-page',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypePagePage implements OnInit {
 
-  constructor() { }
+  animeSearch: any=[];
 
-  ngOnInit() {
+  constructor(private service:AnimeShowService) { }
+
+
+
+  ngOnInit(): void {
+    this.service.GetMovieData().subscribe(
+      (data)=>{
+        this.animeSearch = data.Search;
+        
+      }
+    );
+
   }
-
 }

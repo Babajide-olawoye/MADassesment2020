@@ -34,24 +34,13 @@
   --background: url("../../assets/PICS/fairies.jpg")
 }
 
-body {
-  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+
+ion-toolbar {
+  text-align: center;
+  --background: url("../../assets/PICS/fairies.jpg")  
 }
 
-.header .col {
-  background-color:lightgrey;
-}
+.class1{
 
-.col {
-  border: solid 1px grey;
-  border-bottom-style: none;
-  border-right-style: none;
-}
-
-.col:last-child {
-  border-right: solid 1px grey;
-}
-
-.row:last-child .col {
-  border-bottom: solid 1px grey;
+  text-align: center;
 }

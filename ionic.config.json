@@ -1,5 +1,7 @@
 {
   "name": "animeProj",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

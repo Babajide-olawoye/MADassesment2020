@@ -1,35 +1,18 @@
-<ion-header >
-  <ion-toolbar>
-    <ion-title id = "heading">
-      Anime FanPage
-    </ion-title>
-    <p align ="center">	
-      <a [routerLink]="['/home']" routerDirection="forward">Home </a>	
-        
-      <a  [routerLink]="['/type-page']" routerDirection="forward">Types </a>	
-      <a [routerLink]="['/fav-page']" routerDirection="forward">Favourite </a>
-      <a [routerLink]="['/recommend-page']" routerDirection="forward">Recommendation </a>
-      <a [routerLink]="['/char-page']" routerDirection="forward">Characters </a>
-      
-    </p>
+<app-headframe></app-headframe>>
 
-  </ion-toolbar>
-</ion-header>
-<br>
-<br>
 <ion-content id="container">
+  <br>
+  <br>
+  <!--Created a ionic grid, helps to make text easier to read aginst background-->
   <ion-grid>
     <ion-row>
-      <ion-col class="ion-align-self-center">
-        <h3>Shounen</h3>
+      <ion-col class="class1">
+        <h2>Shounen</h2>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-start">
-        <img>
-      </ion-col>
-      
+
       <ion-col>
         <p>
           Shounen is by far my favourite type of anime.
@@ -39,80 +22,114 @@
         </p>
       </ion-col>
 
+      <!--Got the iframe from youtube to display yutube vids-->
+      <ion-col >
+        <iframe width="602" height="339" src="https://www.youtube.com/embed/GaYzr4oo80E" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" align="left"
+          allowfullscreen></iframe>
+      </ion-col>
+
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-center">
-        <h3>Slice of Life</h3>
+      <ion-col class="class1">
+        <h2>Slice of Life</h2>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-start">
-        <img>
-      </ion-col>
-      
+
       <ion-col>
         <p>
-          Slice of life is another great genre of anime. 
-          When I watch these types of anime I can somewhat relate to them because they usually based on high school or middle school experiances.
+          Slice of life is another great genre of anime.
+          When I watch these types of anime I can somewhat relate to them because they usually based on high school or
+          middle school experiances.
           A good example would be Toradora, Yahari Ore no Seishun Love Comedy wa Machigatteiru,
           and Haganai. These animes are also quite funny, so I would 100% recommend these anime.
         </p>
       </ion-col>
 
+
+      <ion-col >
+        <iframe width="602" height="339" src="https://www.youtube.com/embed/yIo_1XQR2TI" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" align="right"
+          allowfullscreen></iframe>
+      </ion-col>
+
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-center">
-        <h3>Sport</h3>
+      <ion-col class="class1">
+        <h2>Sport</h2>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-start">
-        <img>
-      </ion-col>
-      
+
+
+
       <ion-col>
         <p>
-          Another popular genre is sports, although it not perticularly my favourite 
-          there are a few I enjoyed watching. To be honest I don't have any great 
+          Another popular genre is sports, although it not perticularly my favourite
+          there are a few I enjoyed watching. To be honest I don't have any great
           recommendation for this anime so Watch Mojo would give a better recommendation on these type of anime
         </p>
       </ion-col>
 
+      <ion-col >
+        <iframe width="602" height="339" src="https://www.youtube.com/embed/veFddooST5E" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" align="left"
+          allowfullscreen></iframe>
+      </ion-col>
+
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-center">
-        <h3>Romance</h3>
+      <ion-col class="class1">
+        <h2>Romance</h2>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col class="ion-align-self-start">
-        <img>
-      </ion-col>
-      
+
+
+
       <ion-col>
         <p>
           Romance anime's have some great story that usually involve love triangle.
           Personally I enjoy watching a lot of these anime and would happily binge watch tham again.
-          My all time favourite anime on this list, that it's also Watch Mojo's number 1 choice of romantic anime, is Toradora.
-          Between me and you this anime actually left me in tears and I'm not a guy who shows his emotions. 
-          If you want to hear more about Toradora click here. Anyway back to romance anime, 
+          My all time favourite anime on this list, that it's also Watch Mojo's number 1 choice of romantic anime, is
+          Toradora.
+          Between me and you this anime actually left me in tears and I'm not a guy who shows his emotions.
+          If you want to hear more about Toradora click here. Anyway back to romance anime,
           the best romance anime also includes comedy and are set in high school.
           <br><br>
-          I could write forever on the different types of anime but I got animes to watch, 
-          so I'll stop right here. If you really want to find out about more types of anime MyAnimeList 
+          I could write forever on the different types of anime but I got animes to watch,
+          so I'll stop right here. If you really want to find out about more types of anime MyAnimeList
           is where you should go.
         </p>
       </ion-col>
 
+      <ion-col class="ion-align-self-start">
+        <iframe width="602" height="339" src="https://www.youtube.com/embed/EQceVRb3-po" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" align="right"
+          allowfullscreen></iframe>
+      </ion-col>
+
     </ion-row>
-  
+
   </ion-grid>
 
+  <!--Here I displayed the JSON data of top anmie shows-->
+  <h2 align="center">Here is a list of top 10 anime</h2>
+  <br>
+  <ol>
+    <!--For loop for each data in animeSearch[]-->
+    <li *ngFor="let top of animeSearch ">
+      <h4>{{top.Title}} </h4><br>
+      <img src='{{top.Poster}}'><br>
+      {{top.Year}}
+    </li>
+  </ol>
 
 </ion-content>

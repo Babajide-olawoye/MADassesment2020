@@ -1,72 +1,66 @@
-<ion-header >
-    <ion-toolbar>
-      <ion-title id = "heading">
-        Anime FanPage
-      </ion-title>
-      <p align ="center">	
-        <a [routerLink]="['/home']" routerDirection="forward">Home </a>	
-          
-        <a  [routerLink]="['/type-page']" routerDirection="forward">Types </a>	
-        <a [routerLink]="['/fav-page']" routerDirection="forward">Favourite </a>
-        <a [routerLink]="['/recommend-page']" routerDirection="forward">Recommendation </a>
-        <a [routerLink]="['/char-page']" routerDirection="forward">Characters </a>
-        
-      </p>
-
-    </ion-toolbar>
-</ion-header>
+<app-headframe></app-headframe>
 
 <ion-content id="container">
 
   <div align="center">
     <h1>
-      
+
       Anime Characters
     </h1>
-  
-  <table width="1150"
-        border = "2"
-        bgcolor = "white">
-    <tr>
-      <th>Favourite anime characters</th>
-      <th>Discription</th>
-    </tr>
-    
-    <tr>
+    <!--Used table to display-->
+    <table width="1150" border="2" bgcolor="white">
+      <tr>
+        <th>Favourite anime characters</th>
+        <th>Discription</th>
+      </tr>
+
+      <tr>
+        <th>
+          <p>
+            <!--Again I used iframe to display youtube videos-->
+            Deku<iframe width="640" height="360" src="https://www.youtube.com/embed/ct8In_FAvZE" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+        </th>
+        <td>
+          <p>
+            Deku is by far one of my favourite anime character from "My Hero Academia", he's determination despite him
+            having any quick is inspirational. He's telling us audience that no matter what the circumstances we are
+            capable of achieving what we want. For this reason I chose him as my number one favourite anime character.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <p>
+            Meliodas<iframe width="640" height="360" src="https://www.youtube.com/embed/vhWRwIx14Ik" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+        </th>
+        <td>
+          Meliodas is another one of my favourite characters fromm "The Seven Deadly Sins". His ambition to protect does
+          he cares for despite the severe danger it puts him in. He treat those he cares for like family, and is always
+          a gentleman to others. He respects his opponent in battle and always makes sure that they understand his power
+          before they fight.
+        </td>
+      </tr>
       <th>
         <p>
-          Deku<iframe width="640" height="360" src="https://www.youtube.com/embed/ct8In_FAvZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          Taiga <iframe width="640" height="360" src="https://www.youtube.com/embed/ZeE3yPTGpSs" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
       </th>
       <td>
-      <p>
-      Deku is by far one of my favourite anime character from "My Hero Academia", he's determination despite him having any quick is inspirational. He's telling us audience that no matter what the circumstances we are capable of achieving what we want. For this reason I chose him as my number one favourite anime character.
-      </p>
-      </td>
-    </tr>
-    <tr>
-      <th>
         <p>
-        Meliodas<iframe width="640" height="360" src="https://www.youtube.com/embed/vhWRwIx14Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          Taiga an anime character from "Toradora" is another ine of my favourite anime character because I can relate
+          to her in so many ways. Despie her being sad, angry or upset she always shows a positive emotion hiding her
+          true feelings. I can relate to this behaviour because I was pretty much like this throughout high School.
+          Taiga always think of her friend's needs before her own.
+
         </p>
-      </th>
-      <td>
-      Meliodas is another one of my favourite characters fromm "The Seven Deadly Sins". His ambition to protect does he cares for despite the severe danger it puts him in. He treat those he cares for like family, and is always a gentleman to others. He respects his opponent in battle and always makes sure that they understand his power before they fight.
       </td>
-    </tr>
-    <th>
-      <p>
-      Taiga <iframe width="640" height="360" src="https://www.youtube.com/embed/ZeE3yPTGpSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </p>
-    </th>
-    <td>
-      <p>
-      Taiga an anime character from "Toradora" is another ine of my favourite anime character because I can relate to her in so many ways. Despie her being sad, angry or upset she always shows a positive emotion hiding her true feelings. I can relate to this behaviour because I was pretty much like this throughout high School. Taiga always think of her friend's needs before her own.
-      
-      </p>
-    </td>
-  </table>
-</div>
-    
+    </table>
+  </div>
+
 
 </ion-content>

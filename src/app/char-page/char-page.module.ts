@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { CharPagePageRoutingModule } from './char-page-routing.module';
 
 import { CharPagePage } from './char-page.page';
+import {HeadframePageModule} from '../headframe/headframe.module'
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CharPagePageRoutingModule
+    CharPagePageRoutingModule,
+    HeadframePageModule
   ],
   declarations: [CharPagePage]
 })

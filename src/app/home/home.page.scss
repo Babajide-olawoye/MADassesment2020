@@ -29,7 +29,14 @@
 }
 */
 
+//Background images
 #container {
     //--ion-background-color:rgb(236, 10, 10);
+    --background: url("../../assets/PICS/fairies.jpg")  
+  }
+
+  ion-toolbar {
+    //centering text
+    text-align: center;
     --background: url("../../assets/PICS/fairies.jpg")  
   }

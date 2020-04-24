@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { RecommendPagePageRoutingModule } from './recommend-page-routing.module';
 
 import { RecommendPagePage } from './recommend-page.page';
+import {HeadframePageModule} from '../headframe/headframe.module'
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecommendPagePageRoutingModule
+    RecommendPagePageRoutingModule,
+    HeadframePageModule
   ],
   declarations: [RecommendPagePage]
 })

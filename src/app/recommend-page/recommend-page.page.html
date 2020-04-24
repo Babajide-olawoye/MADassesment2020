@@ -1,33 +1,19 @@
-<ion-header >
-  <ion-toolbar>
-    <ion-title id = "heading">
-      Anime FanPage
-    </ion-title>
-    <p align ="center">	
-      <a [routerLink]="['/home']" routerDirection="forward">Home </a>	
-        
-      <a  [routerLink]="['/type-page']" routerDirection="forward">Types </a>	
-      <a [routerLink]="['/fav-page']" routerDirection="forward">Favourite </a>
-      <a [routerLink]="['/recommend-page']" routerDirection="forward">Recommendation </a>
-      <a [routerLink]="['/char-page']" routerDirection="forward">Characters </a>
-      
-    </p>
-
-  </ion-toolbar>
-</ion-header>
+<app-headframe></app-headframe>
 
 <ion-content id="container">
-<div >
-  
-  
-    <div *ngFor= "let a of fave">
-     <h4 align ="center"> {{a.name}} </h4>
+  <div>
+
+    <!--used for loop to bind data from recommend-page.ts-->
+    <!--Was also able to bind images took awhile to figure out- it paste the string into src and locates the images-->
+
+    <div *ngFor="let a of fave">
+      <h4 align="center"> {{a.name}} </h4>
       <ion-item>
-      <img [src]="a.imgage" height="200" width="300"/>
-      <p align="right"> {{a.discript}}</p>
+        <img [src]="a.imgage" height="200" width="300" />
+        <p align="right"> {{a.discript}}</p>
       </ion-item>
     </div>
-  
 
-</div>
+
+  </div>
 </ion-content>

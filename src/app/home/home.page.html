@@ -1,45 +1,58 @@
-<ion-header >
-    <ion-toolbar>
-      <ion-title id = "heading">
-        Anime FanPage
-      </ion-title>
-      <p align ="center">	
-        <a [routerLink]="['/home']" routerDirection="forward">Home </a>	
-          
-        <a  [routerLink]="['/type-page']" routerDirection="forward">Types </a>	
-        <a [routerLink]="['/fav-page']" routerDirection="forward">Favourite </a>
-        <a [routerLink]="['/recommend-page']" routerDirection="forward">Recommendation </a>
-        <a [routerLink]="['/char-page']" routerDirection="forward">Characters </a>
-        
-      </p>
+<!--The Header-->
 
-    </ion-toolbar>
+<ion-header>
+	<!--Using the ion-toolbar as a selector on css, I displayed my background image-->
+	<ion-toolbar>
+		<ion-title>
+			Anime FanPage
+		</ion-title>
+		<!--a) This block of code help navigate to my other pages-->
+		<a [routerLink]="['/home']" routerDirection="forward">Home </a>
+		<a [routerLink]="['/type-page']" routerDirection="forward">Types </a>
+		<a [routerLink]="['/fav-page']" routerDirection="forward">Favourite </a>
+		<a [routerLink]="['/recommend-page']" routerDirection="forward">Recommendation </a>
+		<a [routerLink]="['/char-page']" routerDirection="forward">Characters </a>
+		<!--End of a) code block-->
+	</ion-toolbar>
 </ion-header>
 
+<!--Used the id "container" as selector so whole webpage has same background-->
 <ion-content id="container">
-  <body>
-		<h1 id = "heading"> Anime FanPage</h1>
 
-			<h1 align="center">			
-				Welcome Anime Fans 
-			</h1>
-	
-		<img src="../../assets/PICS/welcome.jpg" alt = "welcomers" align = "right" width = "600px" height = "200px" >
-		<h3 class = "sub">
+	<body>
+
+		<h1 align="center">
+			Welcome Anime Fans
+		</h1>
+
+		<h3>
 			What is this fan page all about?
-		
+
 		</h3>
-		
-		<p>
-			Hey anime lovers, just like you I am completely obsessed with anime. So I created a mini webpage on anime (because of my obsession). My webpage include all the anime I recommend you should watch, my favourite animes, the differnent types of animes, my favourite anime scenes, and lots more. I won't be doing stuff like anime history or anything on the creator of animes. If you would like to learn about the history <a href= "https://en.wikipedia.org/wiki/Anime">Click Here.</a>
+
+		<p align="left">
+			Hey anime lovers, just like you I am completely obsessed with anime. So I created a mini webpage on
+			anime<br />
+			(because of my obsession). My webpage include all the anime I recommend you should watch, my favourite<br />
+			animes, the differnent types of animes, my favourite anime scenes, and lots more. I won't be doing
+			stuff<br />
+			like anime history or anything on the creator of animes. If you would like to learn about the history <br />
+			<a href="https://en.wikipedia.org/wiki/Anime">Click Here.</a>
 		</p>
-		
-		<br/><br/>
-		
+
+		<br /><br />
 		<p>
-			<img src="../../assets/PICS/mintro.jpg" alt = "Meme intro" align = "middle" width = "200px" height ="200px">
+			<img src="../../assets/PICS/mintro.jpg" alt="Meme intro" align="middle" width="200px" height="200px">
 			Dont worry Sayacha, we have plenty of memes. Hope you all enjoy.
 		</p>
-		
+		<br />
+
+
+		<!--Here is where I call my flashlight plugin method -->
+		<!--Click once to turn it on double click to turn it off-->
+		<p>Here is a random flashlight just because I can</p>
+		<ion-button (click)="mylight()" (dblclick)="mylightOff()">Toggle flashlight</ion-button>
+		<br />
+
 	</body>
 </ion-content>
